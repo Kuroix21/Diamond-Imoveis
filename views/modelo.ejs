@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Imóveis</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script src="styles/scriptInicio.js"></script>
+</head>
+
+<body>
+    <%- include('./components/header/header'); %>
+
+    <div>
+        <div id="img">
+            <img src="styles/imagens/home6.jpg" width="100.5%" height="100%" style="    border-radius: 10px 10px 10px 10px;">
+        </div>
+            
+        <div id="proc">
+            <h2>Aqui você encontra o que precisa</h2>
+            <p>Cidade</p>
+            <input name="saoPaulo" type="button" value="São Paulo"/> 
+            <input name="rioDeJaneiro" type="button" value="Rio de Janeiro" /></p>
+            <button id="search">Procurar um imóvel</button>  
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h3>Apartamentos em destaque:</h3>
+            <p id="desc">Aproveite as oportunidades abaixo e encontre seu lar ideal!</p>
+        </div>
+            
+        <div id="stand1">
+            <img src="styles/imagens/home5.jpg" width="260px" height="200px" id="imgS">
+            <p>R$1.360.000<br><br>
+            Rua aleatoria santos</p>
+        </div>
+
+        <div id="stand2">
+            <img src="styles/imagens/home3.jpg" width="260px" height="200px" id="imgS2">
+            <p>R$1.500.000<br><br>
+            Rua aleatoria Junior</p>
+        </div>
+
+        <div id="stand3">
+            <img src="styles/imagens/home.jpg" width="260px" height="200px" id="imgS3">
+            <p>R$1.800.000<br><br>
+            Rua aleatoria santos Junior</p>
+        </div>
+        <input type="button" value="Ver mais Propriedades" id="maisAp">
+    </div>
+
+    <div>
+        <div>
+            <img src="styles/imagens/contrac.jpg" width="1100px" height="400px" id="contract" >
+            <h4>Ajudamos a vender<br> o seu apartamento</h4>
+           <button id="avaliação">Solicitar avaliação</button>
+        </div>
+    </div>
+
+    <div id="bairros">
+        <div>
+            <h5>Buscar por bairros populares</h5>
+                <div id="sp">
+                    <p>Apartamentos em São Paulo:</p>
+                    <button>Jardim America</button>
+                    <button>Higienopolis</button>
+                    <button>Vila Olimpia</button>
+                    <button>Vila Nova Conceição</button><br>
+                    <button>Vila Madalena</button>
+                    <button>Liberdade</button>
+                    <button>Penha</button>      
+                </div>
+        </div>
+
+        <div id="Rio">
+            <p>Apartamentos no Rio de Janeiro:</p>
+            <button>Ipanema</button>
+            <button>Jacarepaguá</button>
+            <button>Copacabana</button>
+            <button>Leblon</button><br>
+            <button>Tijuca</button>
+            <button>Lagoa</button>
+            <button>Gávea</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="margin-top: 10px;
+        margin-bottom: 10px;">&copy;Diamond Imoveis</p>
+    </footer>
+</body>
+</html>

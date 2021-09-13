@@ -1,0 +1,114 @@
+body{
+    background-image: url('imagens/loginp.jpg');
+    font: normal 15pt Arial;
+  
+}
+
+header{
+    height: 35px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding: 3px;
+    margin-top: 2px;
+    width: 100%;
+    
+}
+#titulo{
+    padding-top: 5px;
+    font-family: Garamond, serif;
+    color: #f87a04;
+    margin-top: 0px;
+    position: absolute;
+    width: 400px;
+    top: 0px
+}
+
+a{
+    color: #f87a04;
+    text-decoration: none;
+}
+
+#venda{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+#entrar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
+#clogin{
+    margin-left: 30px;
+    position: absolute;
+}
+
+#Cadastro{
+    margin-left: 30px;
+    float: right;
+}
+
+h2{
+    border-bottom: 1px black solid;
+    width: 580px;
+    margin-bottom: 0px;
+    font-family: Garamond, serif;
+}
+
+#desc{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: Garamond, serif;
+}
+
+#cemail{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#csenha{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#check{
+    font-size: 15px;
+}
+
+#cusuario{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#cCPF{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#b-entrar{
+    width: 100px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1px;
+    background-color: #f87a04; 
+}
+
+footer{
+    text-align: center;
+    border-top: 1px rgb(0, 0, 0) solid;
+    margin-top: 565px;
+    height: 20px;
+}
