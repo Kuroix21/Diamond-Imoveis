@@ -13,7 +13,7 @@
     <%- include('./components/header/header'); %>
 
     
-    <section id="clogin">
+    <form action="/login" method="post" id="clogin">
         <div>
             <h2>Login</h2>
             <p id="desc">Se você já tever uma conta cadastrada, acesse abaixo com seu E-mail e senha. </p><br>
@@ -27,30 +27,41 @@
             <p id="check">
                 <input type="checkbox"><strong>Permanecer logado</strong>
             </p>
-            <input name="entrar" type="button" value="Entrar" id="b-entrar" onclick=""/>
+            <button name="entrar" type="submit" value="Entrar" id="b-entrar" onclick="">
+                Entrar
+            </button>
         </div>
-    </section>
-
-    <section id="Cadastro">
+    </form>
+    <%if (erros != undefined) { %>
+        <% for(var i = 0; i < erros.length; i++) { %>
+            <li><%= erros[i] %></li>
+          <% } %>
+    <% } %>
+    <form action="/login" method="post" id="Cadastro">
         <div>
             <h2>Cadastrar-se</h2>
             <p id="desc">Crie uma nova conta e aproveite o site.</p><br>
 
             <p id="cemail"><strong>E-mail:</strong></p>
-            <input name="CriarEmail" type="email">
+            <input name="email" type="email">
 
             <p id="csenha"><strong>Senha:</strong></p>
-            <input name="CriarSenha" type="password">
+            <input type="password" name="password_hash">
+
+            <p id="csenha"><strong>Confirme sua senha Senha:</strong></p>
+            <input type="password" name="password_hash_confirm">
 
             <p id="cusuario"><strong>Nome de Usuário:</strong></p>
-            <input type="text"  name="CriarUsuario">
+            <input type="text"  name="name">
 
             <p id="cCPF"><strong>CPF:</strong></p>
             <input type="text" name="cpf" ><br>
             
-            <br><input name="cadastrar" type="button" value="Criar conta" id="b-entrar" onclick=""/>
+            <br><button name="cadastrar" type="submit" value="Criar conta" id="b-entrar">
+                Criar conta
+            </button>
         </div>
-    </section>
+    </form>
     
     <footer>
         <p style="
