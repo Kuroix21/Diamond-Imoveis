@@ -1,0 +1,88 @@
+body{
+    font: normal 15pt Arial;
+}
+
+header{
+    height: 35px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding: 3px;
+    margin-top: 2px;
+    width: 100%;
+    
+}
+
+#titulo{
+    padding-top: 5px;
+    font-family: Garamond, serif;
+    color: #f87a04;
+    margin-top: 0px;
+    position: absolute;
+    width: 400px;
+    top: 0px
+}
+
+a{
+    color: #f87a04;
+    text-decoration: none;
+}
+
+#comprar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1px; 
+}
+
+#alugar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
+#venda{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+#entrar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
+.stand1{
+    border: 1px rgb(14, 13, 13) solid;
+    border-radius: 10px;
+    height: 260px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: aliceblue;
+    display: block;
+    float: left;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px rgb(0, 0, 0) solid;
+    margin-top: 85px;
+    float:left ;
+    width:1300px;
+}

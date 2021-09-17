@@ -10,16 +10,13 @@
 
 </head>
 <body>
-    <header>
-        <h1 id="titulo"><a href="inicio">Diamond Imóveis</a></h1>
-        <input name="anuncio" type="button" value="Anunciar" id="venda" onclick="pagCadastroPropri()"/>
-        <input name="login" type="button" value="Entrar ou Criar conta" id="entrar" onclick="pagloginCadastro()"/>
-    </header>
+    <%- include('./components/header/header'); %>
+
     
     <section id="clogin">
         <div>
             <h2>Login</h2>
-            <p id="desc">Se você já tever uma conta cadastrada, acesse abaixo com seu E-mail e senha. </p><br>
+            <p id="desc">Se você já tever uma conta cadastrada, acesse abaixo com seu E-mail e senha. </p>
 
             <p id="cemail"><strong>E-mail:</strong></p>
             <input name="email" type="email">
@@ -37,7 +34,7 @@
     <section id="Cadastro">
         <div>
             <h2>Cadastrar-se</h2>
-            <p id="desc">Crie uma nova conta e aproveite o site.</p><br>
+            <p id="desc">Crie uma nova conta e aproveite o site.</p>
 
             <p id="cemail"><strong>E-mail:</strong></p>
             <input name="CriarEmail" type="email">
@@ -54,13 +51,7 @@
             <br><input name="cadastrar" type="button" value="Criar conta" id="b-entrar" onclick=""/>
         </div>
     </section>
-    
-    <footer>
-        <p style="
-            margin-top: 10px;
-            margin-bottom: 10px;
-        ">©Diamond Imoveis</p>
-    </footer>
 
+    <%- include('./components/footer/footer'); %>
 </body>
 </html>

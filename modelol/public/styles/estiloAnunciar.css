@@ -31,7 +31,7 @@ a{
     border-radius: 10px;
     padding: 10px;
     width: 350px;
-    margin-left: 430px;
+    margin-left: 490px;
     margin-top: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
@@ -61,6 +61,27 @@ h2{
     text-align: center;
     margin-top: 15px;
 }
+#comprar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1px; 
+}
+
+#alugar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
 #venda{
     border-radius: 10px;
     color: rgb(0, 0, 0);

@@ -6,3 +6,7 @@ function pagloginCadastro() {
 function pagCadastroPropri() {
     window.location.href = "anunciar";
 }
+
+function pagAlugar() {
+    window.location.href = "alugar";
+}

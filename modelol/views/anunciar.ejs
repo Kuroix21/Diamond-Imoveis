@@ -10,16 +10,10 @@
     
 </head>
 <body>
-    <header>
-        <h1 id="titulo"><a href="inicio">Diamond Imóveis</a></h1>
-        <input name="anuncio" type="button" value="Anunciar" id="venda" onclick="pagCadastroPropri()"/>
-        <input name="login" type="button" value="Entrar ou Criar conta" id="entrar" onclick="pagloginCadastro()"/>
-    </header>
-
+    <%- include('./components/header/header'); %>
     <section>
         <div id="cadPropri">
             <h2><strong>Cadastre sua propriedade</strong></h2>
-            
             <p>Insira as informações do imovel:</p>
 
             <p><strong>Numero de quartos:</strong></p>
@@ -37,12 +31,13 @@
             <p><strong>Metros quadrados:</strong></p>
             <p><input name="metros" type="number"></p>
 
+            <p><strong>CEP:</strong></p>
+            <p><input name="cep" type="number"></p>
+
             <input name="cadastrarP" type="button" value="Finalizar Cadastro" id="CadastroP" onclick="cadastroConcluido()"/>
 
         </div>
     </section>
-    <footer>
-        <p>©Diamond Imoveis</p>
-    </footer>
+    <%- include('./components/footer/footer'); %>
 </body>
 </html>

@@ -1,15 +1,30 @@
 {
-  "name": "modelol",
+  "name": "diamond",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuroix21/Diamond-Imoveis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kuroix21/Diamond-Imoveis/issues"
+  },
+  "homepage": "https://github.com/Kuroix21/Diamond-Imoveis#readme",
+  "description": ""
 }
