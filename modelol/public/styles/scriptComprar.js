@@ -7,14 +7,7 @@ function pagloginCadastro() {
 window.location.href = "login";
 }
 
-function cadastroConcluido(){
-    window.alert("Propriedade cadastrada com sucesso");
-}
 
 function pagAlugar() {
     window.location.href = "alugar";
-}
-
-function pagComprar() {
-    window.location.href = "comprar";
 }

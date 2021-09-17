@@ -10,3 +10,7 @@ function pagCadastroPropri() {
 function pagAlugar() {
     window.location.href = "alugar";
 }
+
+function pagComprar() {
+    window.location.href = "comprar";
+}

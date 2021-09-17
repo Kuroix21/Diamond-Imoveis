@@ -27,6 +27,14 @@ app.get('/alugar', function(req, res){
     res.render("alugar")
 });
 
+app.get('/comprar', function(req, res){
+    res.render("comprar")
+});
+
+app.get('/detalhes', function(req, res){
+    res.render("detalhes")
+});
+
 
 app.listen(port, err => {
     console.log(`Server is listening on ${port}`);
