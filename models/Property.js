@@ -1,31 +1,26 @@
 const db = require('./db');
 
-const Client = db.sequelize.define('customer_entities', {
-    id: {
+const Property = db.sequelize.define('property_entities', {
+    property_id: {
         type: db.Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
-    first_name: {
+    entity_id: {
         type: db.Sequelize.STRING,
         allowNull: false
     },
-    last_name: {
-        type: db.Sequelize.STRING,
-        allowNull: false
-    },
-    email: {
+    name: {
         type: db.Sequelize.STRING
     },
-    cpf: {
-        type: db.Sequelize.STRING
+    price: {
+        type: db.Sequelize.FLOAT
     },
-    password_hash: {
-        type: db.Sequelize.STRING
+    description: {
+        type: db.Sequelize.STRING   
     }
 })
- 
 
 //Client.sync({force: true})
 module.exports = Client;

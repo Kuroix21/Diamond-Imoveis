@@ -11,8 +11,12 @@
 </head>
 <body>
     <%- include('./components/header/header'); %>
+    <%if (erros != undefined) { %>
+        <% for(var i = 0; i < erros.length; i++) { %>
+            <li><%= erros[i] %></li>
+          <% } %>
+    <% } %>
 
-    
     <form action="/login" method="post" id="clogin">
         <div>
             <h2>Login</h2>
@@ -32,11 +36,6 @@
             </button>
         </div>
     </form>
-    <%if (erros != undefined) { %>
-        <% for(var i = 0; i < erros.length; i++) { %>
-            <li><%= erros[i] %></li>
-          <% } %>
-    <% } %>
     <form action="/login" method="post" id="Cadastro">
         <div>
             <h2>Cadastrar-se</h2>
@@ -45,15 +44,17 @@
             <p id="cemail"><strong>E-mail:</strong></p>
             <input name="email" type="email">
 
+
+            <p id="cusuario"><strong>Primeiro nome:</strong></p>
+            <input type="text"  name="first_name">
+
+            <p id="cusuario"><strong>Ultimo nome:</strong></p>
+            <input type="text"  name="last_name">
             <p id="csenha"><strong>Senha:</strong></p>
-            <input type="password" name="password_hash">
+            <input type="password" name="password">
 
             <p id="csenha"><strong>Confirme sua senha Senha:</strong></p>
-            <input type="password" name="password_hash_confirm">
-
-            <p id="cusuario"><strong>Nome de Usuário:</strong></p>
-            <input type="text"  name="name">
-
+            <input type="password" name="password_confirm">
             <p id="cCPF"><strong>CPF:</strong></p>
             <input type="text" name="cpf" ><br>
             
