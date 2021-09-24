@@ -1,0 +1,258 @@
+body{
+    background-image: url('imagens/homeb.jpg');
+    font: normal 15pt Arial;
+  
+}
+
+header{
+    height: 35px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding: 3px;
+    margin-top: 2px;
+    width: 100%;
+    
+}
+
+#img{
+   height: 580px;
+   border-radius: 10px 10px 10px 10px;
+}
+
+#titulo{
+    padding-top: 5px;
+    font-family: Garamond, serif;
+    color: #f87a04;
+    margin-top: 0px;
+    position: absolute;
+    width: 400px;
+    top: 0px
+}
+a{
+    color: #f87a04;
+    text-decoration: none;
+}
+
+#comprar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1px; 
+}
+
+#alugar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
+#venda{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;  
+}
+
+#entrar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right; 
+}
+
+
+
+.botaoi{
+  background-color: #f87a04; 
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+#proc{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin-left: 800px;
+    position:absolute;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    bottom: 230px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 5px;
+}
+
+#desc{
+    text-align: center;
+    font-size: 12pt;
+}
+
+h3{
+    text-align: center;
+}
+
+#exibição{
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1080px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+}
+
+#stand1{
+    border: 1px rgb(204, 199, 199) solid;
+    border-radius: 10px;
+    width: 263px;
+    margin-left: 80px;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+#imgS{
+    border-radius: 10px 10px 0px 0px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 263px;
+    
+}
+
+#stand2{
+    border: 1px rgb(204, 199, 199) solid;
+    border-radius: 10px;
+    width: 263px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: 410px;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+#imgS2{
+    border-radius: 10px 10px 0px 0px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 263px;
+    
+}
+
+#stand3{
+    border: 1px rgb(204, 199, 199) solid;
+    border-radius: 10px;
+    width: 263px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: 735px;
+    background-color: aliceblue;
+}
+
+#imgS3{
+    border-radius: 10px 10px 0px 0px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 263px;
+    
+}
+
+#maisAp{
+    background-color: #f87a04; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#contract{
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+}
+
+#avaliação{
+    background-color: #f87a04; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 193px; 
+    position: absolute;
+    top: 1380px;
+    
+}
+
+h4{
+    position: absolute;
+    top: 1250px;
+    left: 190px;
+    color: #f87a04;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(241, 241, 241);
+    font-size: 25px;
+}
+
+h5{
+    text-align: center;
+    font-size:25px ;
+    
+}
+#bairros{
+    margin-top: 455px;
+}
+
+#sp{
+    position: absolute;
+}
+
+#Rio{
+    margin-left: 880px;
+    margin-top: 60px;
+}
+
+button{
+    background-color: #f87a04; 
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px rgb(0, 0, 0) solid;
+    margin-top: 30px;
+    
+}
