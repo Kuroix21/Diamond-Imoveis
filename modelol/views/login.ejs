@@ -17,7 +17,7 @@
           <% } %>
     <% } %>
 
-    <form action="/login" method="post" id="clogin">
+    <form action="/login/auth" method="post" id="clogin">
         <div>
             <h2>Login</h2>
             <p id="desc">Se você já tever uma conta cadastrada, acesse abaixo com seu E-mail e senha. </p>
@@ -26,7 +26,7 @@
             <input name="email" type="email">
 
             <p id="csenha"><strong>Senha:</strong></p>
-            <input name="senha" type="password">
+            <input name="password" type="password">
 
             <p id="check">
                 <input type="checkbox"><strong>Permanecer logado</strong>
@@ -56,15 +56,12 @@
             <p id="csenha"><strong>Confirme sua senha Senha:</strong></p>
             <input type="password" name="password_confirm">
             <p id="cCPF"><strong>CPF:</strong></p>
-            <input type="text" name="cpf" ><br>
+            <input type="number" name="cpf" ><br>
             
             <br><button name="cadastrar" type="submit" value="Criar conta" id="b-entrar">
                 Criar conta
             </button>
         </div>
-<<<<<<< HEAD:modelol/views/login.ejs
-    </section>
-=======
     </form>
     
     <footer>
@@ -73,7 +70,6 @@
             margin-bottom: 10px;
         ">©Diamond Imoveis</p>
     </footer>
->>>>>>> e7a07c4048be5a05eba14c10504b1aae88214e8c:views/login.ejs
 
     <%- include('./components/footer/footer'); %>
 </body>

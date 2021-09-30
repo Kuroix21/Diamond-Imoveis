@@ -22,5 +22,5 @@ const Property = db.sequelize.define('property_entities', {
     }
 })
 
-//Client.sync({force: true})
+//Property.sync({force: true})
 module.exports = Client;

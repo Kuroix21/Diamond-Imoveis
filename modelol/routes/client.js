@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router()
 const bcrypt = require('bcryptjs');
+const passport = require('passport');
+
 
 const Client = require('../models/Client')
 
@@ -40,15 +42,25 @@ router.post('/login', (req, res) => {
         res.render("login", {erros: erros})
 
     } else {
-        Client.findOne({where: {email: req.body.email, cpf: req.body.cpf}}).then((usuario) => {
-            if(usuario != null) {
-                res.render("login", {erros: ["Ja existe um usuario cadastrado com esses dados"]})
+        Client.findOne({where: {email: req.body.email}}).then((usuario) => {
+            if(usuario?.length > 1) {
+                console.log(usuario)
+                //res.render("login", {erros: ["Ja existe um usuario cadastrado com esses dados"]})
             } else {
+                console.log("entrou no else")
                 bcrypt.genSalt(10, (erro, salt) => {
                     bcrypt.hash(req.body.password, salt, (erro, hash) => {
                         if(erro) {
-                            res.render("login", {erros: ["Erro ao salvar"]})
+                           // res.render("login", {erros: ["Erro ao salvar"]})
                         }
+
+                        console.log({
+                            email: req.body.email,
+                            first_name: req.body.first_name,
+                            last_name: req.body.last_name,
+                            cpf: req.body.cpf,
+                            password_hash: hash,
+                        })
 
                         Client.create({
                             email: req.body.email,
@@ -60,7 +72,7 @@ router.post('/login', (req, res) => {
                             res.render("login", {erros: ["Criado com sucesso!"]})
                             res.redirect('/')
                         }).catch(err => {
-                            res.render("login", {erros: ["Houve um error" + err.message]})
+                            //res.render("login", {erros: ["Houve um error" + err.message]})
                             res.redirect('/')
                         })
                     })
@@ -68,10 +80,20 @@ router.post('/login', (req, res) => {
 
             }
         }).catch((err) => {
-            res.send("Houve um erro interno")
+            console.log(err)
+            //res.send("Houve um erro interno")
             res.redirect("/")
         })
     }
 });
+
+router.post('/login/auth', (req, res, next) => {
+    console.log("rota")
+    passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/login",
+        failureFlash: true
+        })(req, res, next)
+})
 
 module.exports = router;

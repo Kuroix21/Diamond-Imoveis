@@ -6,10 +6,14 @@ const path = require('path');
 const client = require('./routes/client')
 const session = require('express-session');
 const flash = require('connect-flash');
+const passport = require('passport')
+require('./config/auth')(passport)
 
 //Session 
 
     app.use(session({secret: "session_diamond", resave: true, saveUninitialized: true}))
+    app.use(passport.initialize())
+    app.use(passport.session())
     app.use(flash())
 
 //Middleware 

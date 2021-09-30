@@ -18,6 +18,8 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
