@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router()
-const isClient = require('../helpers/isClient');
+const { isClient } = require('../helpers/isClient');
 
 const Property = require('../models/property')
 
-router.get('/anunciar', (req, res) => {
+router.get('/anunciar', isClient , (req, res) => {
 
     res.render("anunciar", { erros:  '' })
 }
@@ -39,7 +39,6 @@ router.get('/alugar', (req, res) => {
 }
 );
 
-
 router.get('/imovel/:id', (req, res) => {
     Property.findOne({where: {entity_id: req.params.id}}).then(property => {
         // retorna o usuário
@@ -47,8 +46,7 @@ router.get('/imovel/:id', (req, res) => {
     }).catch(err => {
         if (err) res.send(err)
     })
-  })
-
+})
 
 router.post('/property/add', (req, res) => {
     var erros = [];

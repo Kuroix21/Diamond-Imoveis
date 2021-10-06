@@ -10,10 +10,6 @@ router.get('/login', (req, res) => {
     res.render("login", {erros: ''})
 });
 
-router.get('/teste', (req, res) => {
-    res.render("login", {erros: ''})
-});
-
 router.post('/login', (req, res) => {
     var erros = [];
 
@@ -97,6 +93,12 @@ router.post('/login/auth', (req, res, next) => {
         failureRedirect: "/login",
         failureFlash: true
         })(req, res, next)
+})
+
+router.get('/logout', (req, res) => {
+    req.logout();
+    req.flash('success_msg', "Deslogado com sucesso")
+    res.redirect("/")
 })
 
 module.exports = router;
