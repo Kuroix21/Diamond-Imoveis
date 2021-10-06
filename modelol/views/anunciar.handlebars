@@ -1,0 +1,71 @@
+
+    <section>
+      <form id="formulario" name="form validate" method="POST" action="property/add">
+        <div id="cadPropri">
+            <h2 class="titulos"><strong>Cadastre sua propriedade</strong></h2>
+            <p>Insira as informações do imovel:</p>
+
+            <p><strong>Nome para o anuncio:</strong></p>
+            <p><input class="txtbox" name="name" type="text"></p>
+
+            <p><strong>Tipo de anuncio:</strong></p>
+            <select name="type_property" id="">
+              <option value="aluguel">
+                Aluguel
+              </option>
+              <option value="venda">
+                Venda
+              </option>
+            </select>
+            <p><strong>Preço:</strong></p>
+            <p><input class="txtbox" name="price" type="number"></p>
+
+            <p><strong>Numero de quartos:</strong></p>
+            <p><input class="txtbox" name="bedrooms" type="number"></p>
+
+            <p><strong>Numero vagas na garagem:</strong></p>
+            <p><input class="txtbox" name="parking_spaces" type="number"></p>
+
+            <p><strong>Numero de banheiros:</strong></p>
+            <p><input class="txtbox" name="bathrooms" type="number"></p>
+
+            <p><strong>Metros quadrados:</strong></p>
+            <p><input class="txtbox" name="square_meters" type="number"></p>
+
+
+            <p><strong>Descrição:</strong></p>
+            <p><textarea class="txtbox" name="description">
+              
+            </textarea>
+
+            <h3 class="titulos"><strong>Digite o CEP abaixo:</strong></h3>
+
+            <p><strong>CEP:</strong></p>
+            <p><input class="txtbox" name="postcode" type="text"></p>
+
+            <p><strong>Rua:</strong></p>
+            <p><input class="txtbox" name="street" type="text"></p>
+
+            <p><strong>Cidade:</strong></p>
+            <p><input class="txtbox" name="city" type="text"></p>
+
+            <p><strong>Estado:</strong></p>
+            <p><input class="txtbox" name="state" type="text"></p>
+
+            <h4 class="titulos">Insira abaixo uma forma de contato:</h5>
+              <p><strong>Telefone:</strong></p>
+              <p><input class="txtbox" name="tel" type="text" placeholder="ex: 98564-9523"></p>
+
+            <h5 class="titulos">Insira abaixo 3 imagens do seu imovel:</h4>
+            <form class="upload-imagem">
+                <input type="file" class="upload" required>
+                <input type="file" class="upload" required>
+                <input type="file" class="upload" required>
+                
+              </form>
+                <img class="imagem" src="http://via.placeholder.com/750x420" alt="Sua imagem" width="350" height="150">
+                <input name="cadastrarP" type="submit" value="Finalizar Cadastro" id="CadastroP" onclick="cadastroConcluido()"/>
+
+          </div>
+        </form>
+    </section>

@@ -1,16 +1,3 @@
-body{
-    font: normal 15pt Arial;
-    background-image: url('imagens/cata.jpg');
-}
-
-header{
-    height: 35px;
-    border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
-    margin-top: 2px;
-    width: 100%;
-    
-}
 
 #titulo{
     padding-top: 5px;
@@ -68,12 +55,14 @@ a{
     float: right;
 }
 
-h2{
+.titulos{
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: center;
     color: #f87a04;
     -webkit-text-stroke: 0.3px rgb(250, 250, 250);
+    font-family: Garamond, serif;
+    font-size: 30px;
 }
 
 #img{

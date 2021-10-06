@@ -1,15 +1,11 @@
 const db = require('./db');
 
 const Property = db.sequelize.define('property_entities', {
-    property_id: {
+    entity_id: {
         type: db.Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
-    },
-    entity_id: {
-        type: db.Sequelize.STRING,
-        allowNull: false
     },
     name: {
         type: db.Sequelize.STRING
@@ -17,10 +13,46 @@ const Property = db.sequelize.define('property_entities', {
     price: {
         type: db.Sequelize.FLOAT
     },
-    description: {
+    rooms: {
         type: db.Sequelize.STRING   
-    }
+    },
+    bathrooms: {
+        type: db.Sequelize.STRING   
+    },
+    square_meters: {
+        type: db.Sequelize.STRING   
+    },
+    parking_spaces: {
+        type: db.Sequelize.STRING   
+    },
+    bedrooms: {
+        type: db.Sequelize.STRING   
+    },
+    type_property: {
+        type: db.Sequelize.STRING   
+    },
+    street: {
+        type: db.Sequelize.STRING   
+    },
+    city: {
+        type: db.Sequelize.STRING   
+    },
+    state: {
+        type: db.Sequelize.STRING   
+    },
+    postcode: {
+        type: db.Sequelize.STRING   
+    },
+    tel: {
+        type: db.Sequelize.STRING   
+    },
+    owner_id: {
+        type: db.Sequelize.INTEGER   
+    },
+    description: {
+        type: db.Sequelize.TEXT   
+    },
 })
 
 //Property.sync({force: true})
-module.exports = Client;
+module.exports = Property;

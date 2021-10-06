@@ -10,31 +10,35 @@ router.get('/login', (req, res) => {
     res.render("login", {erros: ''})
 });
 
+router.get('/teste', (req, res) => {
+    res.render("login", {erros: ''})
+});
+
 router.post('/login', (req, res) => {
     var erros = [];
 
     if(!req.body.first_name) {
-        erros.push("Por favor insira seu primeiro nome")
+        erros.push({message: "Por favor insira seu primeiro nome"})
     }
 
     if(!req.body.last_name) {
-        erros.push("Por favor insira seu ultimo nome")
+        erros.push({message: "Por favor insira seu ultimo nome"})
     }
 
     if(!req.body.email) {
-        erros.push("Por favor insira seu email")
+        erros.push({message: "Por favor insira seu email"})
     }
 
     if(!req.body.password) {
-        erros.push("Por favor insira uma senha")
+        erros.push({message: "Por favor insira uma senha"})
     }
 
     if(req.body.password < 6) {
-        erros.push("Senha muito curta")
+        erros.push({message: "Senha muito curta"})
     }
 
     if(req.body.password_confirm !== req.body.password) {
-        erros.push("Senhas divergentes, tente novamente")
+        erros.push({message: "Senhas divergentes, tente novamente"})
     }
 
     if(erros.length > 0) {
@@ -69,10 +73,10 @@ router.post('/login', (req, res) => {
                             cpf: req.body.cpf,
                             password_hash: hash,
                         }).then(_ => {
-                            res.render("login", {erros: ["Criado com sucesso!"]})
+                            req.flash("success_msg", "Criado com sucesso!")
                             res.redirect('/')
                         }).catch(err => {
-                            //res.render("login", {erros: ["Houve um error" + err.message]})
+                            req.flash("message_error", "Houve um error")
                             res.redirect('/')
                         })
                     })
@@ -88,7 +92,6 @@ router.post('/login', (req, res) => {
 });
 
 router.post('/login/auth', (req, res, next) => {
-    console.log("rota")
     passport.authenticate("local", {
         successRedirect: "/",
         failureRedirect: "/login",

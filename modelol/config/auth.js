@@ -6,23 +6,19 @@ const bcrypt = require('bcryptjs')
 require('../models/Client')
 const Client = require('../models/Client')
 
-
-module.exports =function(passport) {
+module.exports = function(passport) {
     passport.use(new localStrategy({usernameField: 'email', passwordField: 'password'}, (email, password, done) => {
         Client.findOne({where: {email: email}}).then((user) => {
             if(!user) {
-
                 return done(null, false, {message: 'Conta inexistente'})
-                console.log("nao existe")
             } 
 
             bcrypt.compare(password, user.password_hash, (error, success) => {
                 if(success) {
-                    console.log("success")
                     return done(null, user)
                 } else {
                     console.log(password, user.password_hash)
-                    console.log("error")
+                    console.log("error" + error)
                     return done(null, false, {message: 'Senha incorreta'})
                     
                 }

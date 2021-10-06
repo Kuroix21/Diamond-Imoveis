@@ -1,16 +1,71 @@
 body{
-    background-image: url('imagens/homeb.jpg');
-    font: normal 15pt Arial;
-  
+    background-color: rgba(0, 0, 0, 0.10);
+    font: normal 15pt;
+    font-family: system-ui;
+}
+
+h1 a {
+    font-size: 40px;
+}
+
+.menu{
+    color: #f87a04;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+}
+
+.message-success {
+    background: #33ff3363;
+    color: #000;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;  
+}
+
+.user-name {
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    color: white;
+}
+
+.message-erro {
+    background: #ff4747;
+    color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;    
+}
+
+.menu:hover {
+    background: #f87a04;
+    color: black;
 }
 
 header{
     height: 35px;
     border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
+    padding: 15px 4px;
     margin-top: 2px;
-    width: 100%;
-    
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 45%);    
+    background: #28292a;
+}
+
+body .main{
+    max-width: 1240px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
 }
 
 #img{
@@ -30,6 +85,15 @@ header{
 a{
     color: #f87a04;
     text-decoration: none;
+}
+
+.menu{
+    color: #f87a04;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    
 }
 
 #comprar{
@@ -130,7 +194,13 @@ h3{
     margin-left: 80px;
     position: absolute;
     background-color: aliceblue;
+    cursor: pointer; 
 }
+
+#stand1:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
+}
+
 
 #imgS{
     border-radius: 10px 10px 0px 0px;
@@ -151,6 +221,11 @@ h3{
     margin-left: 410px;
     position: absolute;
     background-color: aliceblue;
+    cursor: pointer; 
+}
+
+#stand2:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
 #imgS2{
@@ -171,6 +246,11 @@ h3{
     padding-left: 0px;
     margin-left: 735px;
     background-color: aliceblue;
+    cursor: pointer; 
+}
+
+#stand3:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
 #imgS3{

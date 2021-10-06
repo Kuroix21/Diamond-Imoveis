@@ -1,0 +1,14 @@
+
+    <header>
+        
+        <h1 id="titulo"><a href="/">Diamond Imóveis</a></h1>
+        <a class="menu" href="/anunciar">Anunciar </a>
+        <a class="menu" href="/alugar">Imóveis para Alugar </a>
+        <a class="menu" href="/comprar">Imóveis para Comprar </a>
+        
+        {{#if user}}
+        <span class="user-name">Olá {{ user.first_name }} !</span>
+        {{else}}
+        <a class="menu" href="/login">Entrar ou criar conta </a>
+        {{/if}}
+    </header>

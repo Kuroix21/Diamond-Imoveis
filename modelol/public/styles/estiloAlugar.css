@@ -1,16 +1,4 @@
-body{
-    font: normal 15pt Arial;
-    background-image: url('imagens/cata.jpg');
-}
 
-header{
-    height: 35px;
-    border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
-    margin-top: 2px;
-    width: 100%;
-    
-}
 
 #titulo{
     padding-top: 5px;
@@ -84,6 +72,11 @@ h2{
     background-color: aliceblue;
     display: block;
     float: left;
+    cursor: pointer;
+}
+
+.stand1:hover{
+    box-shadow: 0 0 15px rgba(20, 20, 20, 0.521); 
 }
 
 footer{
