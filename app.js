@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const port = 5000;
+const port = 3000;
 const app = express();
 const handlebars = require('express-handlebars');
 const Handlebars = require('handlebars')
@@ -66,6 +66,6 @@ app.get('/detalhes', function(req, res){
 });
 
 
-app.listen(port, err => {
-    console.log(`Server is listening on ${port}`);
-});
+app.listen(process.env.PORT || port, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
