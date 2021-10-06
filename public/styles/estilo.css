@@ -1,16 +1,71 @@
 body{
-    background-image: url('imagens/homeb.jpg');
-    font: normal 15pt Arial;
-  
+    background-color: rgba(0, 0, 0, 0.10);
+    font: normal 15pt;
+    font-family: system-ui;
+}
+
+h1 a {
+    font-size: 40px;
+}
+
+.menu{
+    color: #f87a04;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+}
+
+.message-success {
+    background: #33ff3363;
+    color: #000;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;  
+}
+
+.user-name {
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    color: white;
+}
+
+.message-erro {
+    background: #ff4747;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;    
+}
+
+.menu:hover {
+    background: #f87a04;
+    color: black;
 }
 
 header{
     height: 35px;
     border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
+    padding: 15px 4px;
     margin-top: 2px;
-    width: 100%;
-    
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 45%);    
+    background: #28292a;
+}
+
+body .main{
+    max-width: 1240px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
 }
 
 #img{
@@ -32,7 +87,16 @@ a{
     text-decoration: none;
 }
 
-#compra{
+.menu{
+    color: #f87a04;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: right;
+    
+}
+
+#comprar{
     border-radius: 10px;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
@@ -40,11 +104,10 @@ a{
     font-size: 16px;
     cursor: pointer;
     float: right;
-    margin-top: 1px;
-    
+    margin-top: 1px; 
 }
 
-#aluguel{
+#alugar{
     border-radius: 10px;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
@@ -52,7 +115,6 @@ a{
     font-size: 16px;
     cursor: pointer; 
     float: right;
-    background-color: #f87a04; 
 }
 
 #venda{
@@ -62,8 +124,7 @@ a{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    float: right;
-    background-color: #f87a04; 
+    float: right;  
 }
 
 #entrar{
@@ -73,21 +134,20 @@ a{
     text-align: center;
     font-size: 16px;
     cursor: pointer; 
-    float: right;
-    background-color: #f87a04; 
+    float: right; 
 }
 
 
 
-#search{
-    background-color: #f87a04; 
+.botaoi{
+  background-color: #f87a04; 
   border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 45px; 
+  margin-left: 30px;
 }
 
 #proc{
@@ -116,17 +176,31 @@ h3{
     text-align: center;
 }
 
+#exibição{
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1080px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+}
+
 #stand1{
     border: 1px rgb(204, 199, 199) solid;
     border-radius: 10px;
     width: 263px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-left: 180px;
+    margin-left: 80px;
     position: absolute;
     background-color: aliceblue;
+    cursor: pointer; 
 }
+
+#stand1:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
+}
+
 
 #imgS{
     border-radius: 10px 10px 0px 0px;
@@ -144,9 +218,14 @@ h3{
     padding-right: 0px;
     padding-top: 0px;
     padding-left: 0px;
-    margin-left: 530px;
+    margin-left: 410px;
     position: absolute;
     background-color: aliceblue;
+    cursor: pointer; 
+}
+
+#stand2:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
 #imgS2{
@@ -165,8 +244,13 @@ h3{
     padding-right: 0px;
     padding-top: 0px;
     padding-left: 0px;
-    margin-left: 878px;
+    margin-left: 735px;
     background-color: aliceblue;
+    cursor: pointer; 
+}
+
+#stand3:hover{
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
 #imgS3{
@@ -186,12 +270,11 @@ h3{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 520px;
     margin-top: 20px;
 }
 
 #contract{
-    margin-left: 75px;
+    margin-left: 100px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
     position: absolute;
@@ -235,7 +318,7 @@ h5{
 }
 
 #Rio{
-    margin-left: 800px;
+    margin-left: 880px;
     margin-top: 60px;
 }
 
@@ -251,4 +334,5 @@ footer{
     text-align: center;
     border-top: 1px rgb(0, 0, 0) solid;
     margin-top: 30px;
+    
 }

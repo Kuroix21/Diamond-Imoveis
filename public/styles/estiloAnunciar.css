@@ -1,17 +1,5 @@
-body{
-    background-image: url('imagens/loginp.jpg');
-    font: normal 15pt Arial;
-  
-}
 
-header{
-    height: 35px;
-    border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
-    margin-top: 2px;
-    width: 100%;
-    
-}
+
 #titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
@@ -31,10 +19,11 @@ a{
     border-radius: 10px;
     padding: 10px;
     width: 350px;
-    margin-left: 430px;
+    margin-left: 468px;
     margin-top: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
+
 #CadastroP{
     background-color: #f87a04;
     border-radius: 10px;
@@ -47,13 +36,22 @@ a{
     cursor: pointer;
 }
 p{
+    font-size: 23px;
+    font-family: Garamond, serif;
     margin-top: 8px;
     margin-bottom: 5px;
     text-align: center;
 }
 
+.txtbox, select, textarea{
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
-h2{
+.titulos{
     border-bottom: 1px black solid;
     width: 350px;
     margin-bottom: 0px;
@@ -61,6 +59,27 @@ h2{
     text-align: center;
     margin-top: 15px;
 }
+#comprar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1px; 
+}
+
+#alugar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
+}
+
 #venda{
     border-radius: 10px;
     color: rgb(0, 0, 0);
@@ -81,9 +100,30 @@ h2{
     float: right;
 }
 
+.upload{
+    background-color: #f87a04;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+button{
+    background-color: #f87a04;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
 footer{
     text-align: center;
-    border-top: 1px rgb(0, 0, 0) solid;
+    border-top: 1px #f87a04 solid;
     margin-top: 85px;
 }

@@ -1,17 +1,11 @@
-body{
-    background-image: url('imagens/loginp.jpg');
-    font: normal 15pt Arial;
-  
+.txtbox, select, textarea{
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-header{
-    height: 35px;
-    border-bottom: 1px rgb(0, 0, 0) solid;
-    padding: 3px;
-    margin-top: 2px;
-    width: 100%;
-    
-}
 #titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
@@ -25,6 +19,27 @@ header{
 a{
     color: #f87a04;
     text-decoration: none;
+}
+
+#comprar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1px; 
+}
+
+#alugar{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; 
+    float: right;
 }
 
 #venda{
@@ -48,19 +63,35 @@ a{
 }
 
 #clogin{
-    margin-left: 30px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 80px;
     position: absolute;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
 #Cadastro{
+    text-align: center;
     margin-left: 30px;
     float: right;
+    margin-top: 60px;
+    margin-right: 80px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
 h2{
     border-bottom: 1px black solid;
-    width: 580px;
+    width: 350px;
     margin-bottom: 0px;
+    margin-top: 7px;
     font-family: Garamond, serif;
 }
 

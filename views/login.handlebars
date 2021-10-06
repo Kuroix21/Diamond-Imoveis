@@ -1,0 +1,57 @@
+{{#if erros}}
+    <div class="message-erro">
+    {{#each erros}}
+    <span class="">
+        {{message}}
+    </span>
+    <br/>
+    {{else}}
+    {{/each}}
+    </div>
+{{/if}}
+    <form action="/login/auth" method="post" id="clogin">
+        <div>
+            <h2>Login</h2>
+            <p id="desc">Se você já tever uma conta cadastrada, acesse abaixo com seu E-mail e senha. </p>
+
+            <p id="cemail"><strong>E-mail:</strong></p>
+            <input name="email" type="email">
+
+            <p id="csenha"><strong>Senha:</strong></p>
+            <input name="password" type="password">
+
+            <p id="check">
+                <input type="checkbox"><strong>Permanecer logado</strong>
+            </p>
+            <button name="entrar" type="submit" value="Entrar" id="b-entrar" onclick="">
+                Entrar
+            </button>
+        </div>
+    </form>
+    <form action="/login" method="post" id="Cadastro">
+        <div>
+            <h2>Cadastrar-se</h2>
+            <p id="desc">Crie uma nova conta e aproveite o site.</p>
+
+            <p id="cemail"><strong>E-mail:</strong></p>
+            <input name="email" type="email">
+
+
+            <p id="cusuario"><strong>Primeiro nome:</strong></p>
+            <input type="text"  name="first_name">
+
+            <p id="cusuario"><strong>Ultimo nome:</strong></p>
+            <input type="text"  name="last_name">
+            <p id="csenha"><strong>Senha:</strong></p>
+            <input type="password" name="password">
+
+            <p id="csenha"><strong>Confirme sua senha Senha:</strong></p>
+            <input type="password" name="password_confirm">
+            <p id="cCPF"><strong>CPF:</strong></p>
+            <input type="number" name="cpf" ><br>
+            
+            <br><button name="cadastrar" type="submit" value="Criar conta" id="b-entrar">
+                Criar conta
+            </button>
+        </div>
+    </form>
