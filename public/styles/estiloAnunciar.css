@@ -1,6 +1,6 @@
 
 
-#titulo{
+.titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
     color: #f87a04;
@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 
-#cadPropri{
+.cadPropri{
     background: white;
     border-radius: 10px;
     padding: 10px;
@@ -24,7 +24,7 @@ a{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
-#CadastroP{
+.CadastroP{
     background-color: #f87a04;
     border-radius: 10px;
     color: white;

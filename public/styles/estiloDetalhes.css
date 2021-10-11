@@ -1,5 +1,5 @@
 
-#titulo{
+.titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
     color: #f87a04;
@@ -65,7 +65,7 @@ a{
     font-size: 30px;
 }
 
-#img{
+.img{
     border: 1px rgb(14, 13, 13) solid;
     border-radius: 10px;
     height: 420px;
@@ -77,7 +77,7 @@ a{
     float: left;
 }
 
-#infos{
+.infos{
     border: 1px rgb(14, 13, 13) solid;
     border-radius: 10px;
     height: 420px;
@@ -89,7 +89,7 @@ a{
     float: left;
 }
 
-#tel{
+.tel{
     border: 1px rgb(14, 13, 13) solid;
     border-radius: 10px;
     height: 150px;

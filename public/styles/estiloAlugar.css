@@ -1,6 +1,6 @@
 
 
-#titulo{
+.titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
     color: #f87a04;
@@ -56,7 +56,8 @@ a{
     float: right;
 }
 
-h2{
+.titu{
+    font-size: 28px;
     text-align: center;
     color: #f87a04;
     -webkit-text-stroke: 0.3px rgb(250, 250, 250);

@@ -1,7 +1,7 @@
 
     <section>
       <form id="formulario" name="form validate" method="POST" action="property/add">
-        <div id="cadPropri">
+        <div class="cadPropri">
             <h2 class="titulos"><strong>Cadastre sua propriedade</strong></h2>
             <p>Insira as informações do imovel:</p>
 
@@ -52,11 +52,11 @@
             <p><strong>Estado:</strong></p>
             <p><input class="txtbox" name="state" type="text"></p>
 
-            <h4 class="titulos">Insira abaixo uma forma de contato:</h5>
+            <p class="titulos">Insira abaixo uma forma de contato:</p>
               <p><strong>Telefone:</strong></p>
               <p><input class="txtbox" name="tel" type="text" placeholder="ex: 98564-9523"></p>
 
-            <h5 class="titulos">Insira abaixo 3 imagens do seu imovel:</h4>
+            <h5 class="titulos">Insira abaixo 3 imagens do seu imovel:</h5>
             <form class="upload-imagem">
                 <input type="file" class="upload" required>
                 <input type="file" class="upload" required>
@@ -64,7 +64,7 @@
                 
               </form>
                 <img class="imagem" src="http://via.placeholder.com/750x420" alt="Sua imagem" width="350" height="150">
-                <input name="cadastrarP" type="submit" value="Finalizar Cadastro" id="CadastroP" onclick="cadastroConcluido()"/>
+                <input name="cadastrarP" type="submit" value="Finalizar Cadastro" class="CadastroP" onclick="cadastroConcluido()"/>
 
           </div>
         </form>
