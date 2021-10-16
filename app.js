@@ -36,7 +36,6 @@ app.set('views', path.join(__dirname, '/views/'))
 app.engine('handlebars', handlebars({ extname: 'handlebars', defaultLayout: 'main', handlebars: allowInsecurePrototypeAccess(Handlebars) }))
 app.set('view engine', 'handlebars')
 
-
 //Body parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -65,7 +64,6 @@ app.get('/detalhes', function(req, res){
     res.render("detalhes")
 });
 
-
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 5000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+});

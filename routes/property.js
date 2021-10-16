@@ -29,12 +29,10 @@ router.get('/alugar', (req, res) => {
         type_property: 'aluguel'
       }}).then(properties => {
     res.render("alugar", { properties:  properties })
-    console.log(properties)
     }).catch (err => {
         error = true,
         data= [],
         err = err
-
     })
 }
 );
@@ -86,11 +84,23 @@ router.post('/property/add', (req, res) => {
             req.flash("success_msg", "Criado com sucesso!")
             res.redirect('/')
         }).catch(err => {
-            console.log(err)
             req.flash("message_error", "Houve um error")
             res.redirect('/anunciar')
         })
     }
 });
+
+router.get('/client/properties', (req, res) => {
+    Property.findAll({where: {
+        owner_id: req.user.id
+      }}).then(properties => {
+    res.render("alugar", { properties:  properties })
+    }).catch (err => {
+        error = true,
+        data= [],
+        err = err
+    })
+}
+);
 
 module.exports = router;
