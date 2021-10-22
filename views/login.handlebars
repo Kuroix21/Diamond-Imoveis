@@ -42,13 +42,15 @@
 
             <p class="cusuario"><strong>Ultimo nome:</strong></p>
             <input type="text"  name="last_name">
+            
             <p class="csenha"><strong>Senha:</strong></p>
             <input type="password" name="password">
 
-            <p class="csenha"><strong>Confirme sua senha Senha:</strong></p>
+            <p class="csenha"><strong>Confirme sua senha:</strong></p>
             <input type="password" name="password_confirm">
+
             <p class="cCPF"><strong>CPF:</strong></p>
-            <input type="number" name="cpf" ><br>
+            <input oninput="mascara(this)" type="text" name="cpf"><br>
             
             <br><button name="cadastrar" type="submit" value="Criar conta" class="b-entrar">
                 Criar conta
