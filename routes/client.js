@@ -44,10 +44,8 @@ router.post('/login', (req, res) => {
     } else {
         Client.findOne({where: {email: req.body.email}}).then((usuario) => {
             if(usuario?.length > 1) {
-                console.log(usuario)
                 //res.render("login", {erros: ["Ja existe um usuario cadastrado com esses dados"]})
             } else {
-                console.log("entrou no else")
                 bcrypt.genSalt(10, (erro, salt) => {
                     bcrypt.hash(req.body.password, salt, (erro, hash) => {
                         if(erro) {

@@ -40,6 +40,7 @@ router.get('/alugar', (req, res) => {
 router.get('/imovel/:id', (req, res) => {
     Property.findOne({where: {entity_id: req.params.id}}).then(property => {
         // retorna o usuário
+        console.log("propriedade" + property)
         res.render("imovel", {property: property})
     }).catch(err => {
         if (err) res.send(err)
@@ -79,7 +80,7 @@ router.post('/property/add', (req, res) => {
             street: req.body.street,
             city: req.body.city,
             state: req.body.state,
-            description: req.body.description,
+            decription: req.body.decription,
         }).then(_ => {
             req.flash("success_msg", "Criado com sucesso!")
             res.redirect('/')
