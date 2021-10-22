@@ -71,7 +71,7 @@ a{
     height: 420px;
     width: 750px;
     margin-top: 30px;
-    margin-left: 55px;
+    margin-left: 25px;
     background-color: aliceblue;
     display: block;
     float: left;
@@ -80,23 +80,21 @@ a{
 .infos{
     border: 1px rgb(14, 13, 13) solid;
     border-radius: 10px;
-    height: 420px;
     width: 350px;
     margin-top: 30px;
     margin-left: 55px;
     background-color: aliceblue;
     display: block;
-    float: left;
+    float: right;
 }
 
 .tel{
     border: 1px rgb(14, 13, 13) solid;
     border-radius: 10px;
-    height: 150px;
     width: 350px;
     margin-top: 20px;
-    margin-right: 80px;
+    margin-left: 24px;
     background-color: aliceblue;
     display: block;
-    float: right;
+    float: left;
 }

@@ -68,9 +68,10 @@ body {
     margin: 0;
 }
 
-.img{
-   height: 580px;
-   border-radius: 10px 10px 10px 10px;
+.imgI{
+    height: 500px;
+   border: 1px rgb(14, 13, 13) solid;
+    border-radius: 10px;
 }
 
 .titulo{
@@ -309,7 +310,6 @@ h4{
 h5{
     text-align: center;
     font-size:25px ;
-    
 }
 #bairros{
     margin-top: 455px;
