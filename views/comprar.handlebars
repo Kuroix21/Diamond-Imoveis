@@ -1,8 +1,8 @@
 
 <body>
     <section>
-        <h2>Imóveis disponíveis para Comprar:</h2>
-        <label for="Estado">Selecione o estado:</label>
+        <h7 class="titul">Imóveis disponíveis para Comprar:</h7><br>
+        <br><label for="Estado">Selecione o estado:</label>
         <select name="Estado" id="Estado">
             <option value="todos">Todos</option>
             <option value="saoPaulo">São Paulo</option>
@@ -14,9 +14,11 @@
         <a href="/imovel/{{entity_id}}">
             <div class="stand1">
                 <p>{{name}}</p>
-                <p>{{price}}</p>
-                <h1>{{type_property}}</h1>
-            </div>
+                <p>Valor: R${{price}}/mês</p>
+                <p>Tipo de anuncio: {{type_property}}</p>
+                <p>Estado: {{state}}</p>
+                <p>{{description}}</p>
+                </div>
         </a>
     </section>
     {{else}}
