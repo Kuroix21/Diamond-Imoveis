@@ -26,7 +26,43 @@ h1 a {
     border-radius: 10px;
     font-size: 16px;  
 }
+.dropdown {
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    width: fit-content;
+    cursor: pointer;
+    float: right;
+  }
+  .icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0 10px;
+  }
+  .menu-ul {
+    position: absolute;
+    background: white;
+    list-style: none;
+    margin: 50px 0;
+    padding: 0 17px;
+    border: 1px solid;
+  }
+  .menu-ul li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-top: solid 1px rgb(202, 202, 202);    
+  }
+  .menu-ul a {
+        font-size: 14px;
+  }
 
+  .dropdown.closed .menu-ul {
+    height: 0px;
+    display: none;
+  }
+  .dropdown.closed .icon span {
+    transform: rotate(180deg);
+  }
 .user-name {
     padding: 7px 10px;
     text-decoration: none;

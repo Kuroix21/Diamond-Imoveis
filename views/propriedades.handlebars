@@ -1,0 +1,18 @@
+
+<body>
+    {{#each properties}}
+    <section>
+        <a href="/client/property/edit/{{entity_id}}">
+            <div class="stand1">
+                <p>{{name}}</p>
+                <p>Valor: R${{price}}/mês</p>
+                <p>Tipo de anuncio: {{type_property}}</p>
+                <p>Estado: {{state}}</p>
+                <p>{{description}}</p>
+            </div>
+        </a>
+    </section>
+    {{else}}
+    {{/each}}
+</body>
+</html>

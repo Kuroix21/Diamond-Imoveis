@@ -1,28 +1,27 @@
 <section>
         <a >
             <div class="img">
-                
             </div>
-
             <div class="infos">
                 <p><strong>{{property.name}}</strong></p>
-                <p><strong>Valor: </strong>R${{property.price}}/mês</p>
+                <p><strong>Valor: </strong>R${{property.price}}  /mês</p>
                 <p><strong>Tipo de anuncio: </strong><span style="text-transform: capitalize;">{{property.type_property}}</span></p>
                 <p><strong>-----LOCALIZAÇÃO-----</strong></p>
-                <p><strong>CEP: </strong>09330756</p>
-                <p><strong>Rua: </strong>Aleatoria junior</p>
-                <p><strong>Bairro: </strong>Liberdade</p>
-                <p><strong>Estado: </strong>São paulo</p>
+                <p><strong>CEP: </strong>{{ property.postcode }}</p>
+                <p><strong>Rua: </strong>{{ property.street }}</p>
+                <p><strong>Bairro: </strong>{{ property.city }}</p>
+                <p><strong>Estado: </strong>{{ property.state }}</p>
                 <p><strong>-----GERAL-----</strong></p>
-                <p><strong>N° quartos: </strong>2</p>
-                <p><strong>N° banheiros: </strong>1</p>
-                <p><strong>N° vagas garagem:</strong> 2</p>
-                <p><strong>Descrição:</strong> Casa localizada na liberdade proxima ao shopping.</p>
+                <p><strong>N° quartos: </strong>{{ property.bedrooms }}</p>
+                <p><strong>N° banheiros: </strong>{{ property.bathrooms }}</p>
+                <p><strong>N° vagas garagem:</strong> {{ property.parking_spaces }}</p>
+                <p><strong>Metros quadrados:</strong> {{ property.square_meters }}</p>
+                <p><strong>Descrição:</strong>{{ property.description }}</p>
             </div>
 
             <div class="tel">
                 <p><strong>Forma de contato</strong></p>
-                <p><strong>Tel: </strong> (+55) 11942393452</p>
+                <p><strong>Tel: </strong> {{ property.tel }}</p>
             </div>
         </a>
     </section>

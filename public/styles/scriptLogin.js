@@ -29,3 +29,13 @@ function mascara(i){
     if (v.length == 11) i.value += "-";
  
  }
+ 
+ function dropdown() {
+let dropdown = document.querySelector('.dropdown')
+
+    if (dropdown.classList.contains('closed')) {
+        dropdown.classList.remove('closed')
+      } else {
+        dropdown.classList.add('closed')    
+      }
+ }

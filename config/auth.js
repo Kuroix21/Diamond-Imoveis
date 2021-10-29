@@ -17,8 +17,6 @@ module.exports = function(passport) {
                 if(success) {
                     return done(null, user)
                 } else {
-                    console.log(password, user.password_hash)
-                    console.log("error" + error)
                     return done(null, false, {message: 'Senha incorreta'})
                     
                 }
@@ -33,7 +31,6 @@ module.exports = function(passport) {
     passport.deserializeUser((id, done) => {
         Client.findByPk(id).then(user => {
             done(null, user);
-            console.log(id);
           }).catch(err => done(err));
     })
 }
