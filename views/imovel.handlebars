@@ -1,0 +1,54 @@
+<section class="product-view">
+        <a >
+            
+            <div class="img">
+                {{#if property.files_one}}
+                <img src="/public/uploads/{{property.files_one}}"/>
+                {{/if}}
+                {{#if property.files_two}}
+                <img src="/public/uploads/{{property.files_two}}"/>
+                {{/if}}
+                {{#if property.files_three}}
+                <img src="/public/uploads/{{property.files_three}}"/>
+                {{/if}}
+                {{#if property.files_four}}
+                <img src="/public/uploads/{{property.files_four}}"/>
+                {{/if}}
+                
+            </div>
+            <div class="infos">
+                <p><strong>{{property.name}}</strong></p>
+                <p><strong>Valor: </strong>R${{property.price}} </p>
+                <p><strong>Tipo de anuncio: </strong><span style="text-transform: capitalize;">{{property.type_property}}</span></p>
+                <p><strong>-----LOCALIZAÇÃO-----</strong></p>
+                <p><strong>CEP: </strong>{{ property.postcode }}</p>
+                <p><strong>Rua: </strong>{{ property.street }}</p>
+                <p><strong>Bairro: </strong>{{ property.city }}</p>
+                <p><strong>Estado: </strong>{{ property.state }}</p>
+                <p><strong>-----GERAL-----</strong></p>
+                <p><strong>N° quartos: </strong>{{ property.bedrooms }}</p>
+                <p><strong>N° banheiros: </strong>{{ property.bathrooms }}</p>
+                <p><strong>N° vagas garagem:</strong> {{ property.parking_spaces }}</p>
+                <p><strong>Metros quadrados:</strong> {{ property.square_meters }}</p>
+                <p><strong>Descrição:</strong>{{ property.description }}</p>
+            </div>
+
+            <div class="tel">
+                <p><strong>Forma de contato</strong></p>
+                <p><strong>Tel: </strong> {{ property.tel }}</p>
+            </div>
+        </a>
+
+
+    </section>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.img').slick({
+ dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+      });
+    });
+  </script>

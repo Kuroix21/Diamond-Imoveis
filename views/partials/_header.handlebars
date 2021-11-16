@@ -6,9 +6,18 @@
         {{#if user}}
         <a class="menu" href="/alugar">Imóveis para Alugar </a>
         <a class="menu" href="/comprar">Imóveis para Comprar </a>
-        <a class="menu" href="/anunciar">Anunciar </a>
-        <a class="menu" href="/logout">Sair </a>
-        <span class="user-name">Olá {{ user.first_name }} !</span>
+        
+        <div class="dropdown closed">
+
+        <span class="user-name icon" onclick="dropdown()">Olá {{ user.first_name }} ! <span>∆</span></span>
+        
+  <ul class="menu-ul">
+    <li><a class="menu-li" href="/anunciar">Anunciar </a></li>
+    <li><a class="menu-li" href="/client/properties">Meus anuncios </a></li>
+        <li><a class="menu-li" href="/logout">Sair </a></li>
+  </ul>
+</div>
+
         {{else}}
         <a class="menu" href="/alugar">Imóveis para Alugar </a>
         <a class="menu" href="/comprar">Imóveis para Comprar </a>

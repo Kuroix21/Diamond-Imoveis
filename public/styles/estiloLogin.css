@@ -87,7 +87,7 @@ a{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
-h2{
+.h{
     border-bottom: 1px black solid;
     width: 350px;
     margin-bottom: 0px;
@@ -95,38 +95,38 @@ h2{
     font-family: Garamond, serif;
 }
 
-#desc{
+.desc{
     font-size: 18px;
     margin-bottom: 0px;
     margin-top: 5px;
     font-family: Garamond, serif;
 }
 
-#cemail{
+.cemail{
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-#csenha{
+.csenha{
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-#check{
+.check{
     font-size: 15px;
 }
 
-#cusuario{
+.cusuario{
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-#cCPF{
+.cCPF{
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-#b-entrar{
+.b-entrar{
     width: 100px;
     border-radius: 10px;
     color: rgb(0, 0, 0);

@@ -27,6 +27,53 @@ h1 a {
     font-size: 16px;  
 }
 
+
+.product-view .slick-slider .slick-prev, .slick-next {
+    height: 413px !important;
+    background: #f87a04 !important;
+  }
+.dropdown {
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    width: fit-content;
+    cursor: pointer;
+    float: right;
+  }
+  .icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0 10px;
+  }
+  .menu-ul {
+    position: absolute;
+    background: white;
+    list-style: none;
+    margin: 50px 0;
+    padding: 0 17px;
+    border: 1px solid;
+  }
+  .menu-ul li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-top: solid 1px rgb(202, 202, 202);    
+  }
+  .menu-ul a {
+        font-size: 14px;
+  }
+
+  .product-view .slick-initialized .slick-slide {
+    max-height: 416px;
+    object-fit: contain;
+  }
+
+  .dropdown.closed .menu-ul {
+    height: 0px;
+    display: none;
+  }
+  .dropdown.closed .icon span {
+    transform: rotate(180deg);
+  }
 .user-name {
     padding: 7px 10px;
     text-decoration: none;
@@ -68,12 +115,13 @@ body {
     margin: 0;
 }
 
-#img{
-   height: 580px;
-   border-radius: 10px 10px 10px 10px;
+.imgI{
+    height: 500px;
+   border: 1px rgb(14, 13, 13) solid;
+    border-radius: 10px;
 }
 
-#titulo{
+.titulo{
     padding-top: 5px;
     font-family: Garamond, serif;
     color: #f87a04;
@@ -147,14 +195,14 @@ a{
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
-#proc{
+.proc{
     background: white;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    
     margin-left: 800px;
     position:absolute;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
@@ -167,27 +215,30 @@ h3{
     margin-bottom: 5px;
 }
 
-#desc{
+.descr{
     text-align: center;
     font-size: 12pt;
+    margin-bottom: 8px;
+    
 }
 
 h3{
     text-align: center;
 }
 
-#exibição{
+.exibição{
     text-align: center;
     background: white;
     border-radius: 10px;
     padding: 10px;
     width: 1080px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto; 
     margin-top: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
-#stand1{
+.stand11{
     border: 1px rgb(204, 199, 199) solid;
     border-radius: 10px;
     width: 263px;
@@ -197,12 +248,12 @@ h3{
     cursor: pointer; 
 }
 
-#stand1:hover{
+.stand1:hover{
     box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
 
-#imgS{
+.imgS{
     border-radius: 10px 10px 0px 0px;
     padding-right: 2px;
     padding-top: 0px;
@@ -211,7 +262,7 @@ h3{
     
 }
 
-#stand2{
+.stand2{
     border: 1px rgb(204, 199, 199) solid;
     border-radius: 10px;
     width: 263px;
@@ -224,11 +275,11 @@ h3{
     cursor: pointer; 
 }
 
-#stand2:hover{
+.stand2:hover{
     box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
-#imgS2{
+.imgS2{
     border-radius: 10px 10px 0px 0px;
     padding-right: 2px;
     padding-top: 0px;
@@ -237,7 +288,7 @@ h3{
     
 }
 
-#stand3{
+.stand3{
     border: 1px rgb(204, 199, 199) solid;
     border-radius: 10px;
     width: 263px;
@@ -249,11 +300,11 @@ h3{
     cursor: pointer; 
 }
 
-#stand3:hover{
+.stand3:hover{
     box-shadow: 0 0 15px rgba(33, 33, 33, 0.342); 
 }
 
-#imgS3{
+.imgS3{
     border-radius: 10px 10px 0px 0px;
     padding-right: 2px;
     padding-top: 0px;
@@ -262,7 +313,7 @@ h3{
     
 }
 
-#maisAp{
+.maisAp{
     background-color: #f87a04; 
     border-radius: 10px;
     color: white;
@@ -273,14 +324,14 @@ h3{
     margin-top: 20px;
 }
 
-#contract{
-    margin-left: 100px;
+.contract{
+    margin-left: 72px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
     position: absolute;
 }
 
-#avaliação{
+.avaliação{
     background-color: #f87a04; 
     border-radius: 10px;
     color: white;
@@ -307,7 +358,6 @@ h4{
 h5{
     text-align: center;
     font-size:25px ;
-    
 }
 #bairros{
     margin-top: 455px;
