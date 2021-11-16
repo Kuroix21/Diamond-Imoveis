@@ -1,7 +1,7 @@
 
 <body>
     <section>
-        <h7 class="titul">Imóveis disponíveis para Comprar:</h7><br>
+        <h7 class="titul">Imóveis disponíveis para Alugar:</h7> <br>
         <br><label for="Estado">Selecione o estado:</label>
         <select name="Estado" id="Estado">
             <option value="todos">Todos</option>
@@ -13,20 +13,18 @@
     <section>
         <a href="/imovel/{{entity_id}}">
             <div class="stand1">
-    {{#each files}}
-        {{this}}
-    {{else}}
-    {{/each}}
+                <img src="{{baseUrl}}/public/uploads/{{files_one}}">
+                <div class="information">
                 <p>{{name}}</p>
-                <p>Valor: R${{price}}/mês</p>
+                <p>Valor: R${{price}}</p>
                 <p>Tipo de anuncio: {{type_property}}</p>
                 <p>Estado: {{state}}</p>
                 <p>{{description}}</p>
-                </div>
+                    </div>
+            </div>
         </a>
     </section>
     {{else}}
     {{/each}}
 </body>
-
 </html>

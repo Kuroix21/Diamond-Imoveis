@@ -10,11 +10,13 @@
     {{/each}}
     </div>
 {{/if}}
+        <div class="detail">
             <form class="details" action="/client/property/edit/save" method="post">
                 <input type="hidden" name="id" value="{{property.entity_id}}"/>
-                <span>Nome:<input type="text" name="name" value="{{property.name}}"/></span><br/>
-                <span>Valor: R$<input type="text" name="price" value="{{property.price}}"/></span><br/>
-                <span>Tipo de anuncio: 
+                <strong>Editar as informações do seu Anuncio:</strong><br/><br/>
+                <span><strong>Nome: </strong><input type="text" name="name" value="{{property.name}}"/></span><br/>
+                <span><strong>Valor: R$ </strong><input type="text" name="price" value="{{property.price}}"/></span><br/>
+                <span><strong>Tipo de anuncio: </strong>
                     <select name="type_property" id="">
                         <option value="aluguel">
                             Aluguel
@@ -24,22 +26,23 @@
                         </option>
                     </select>
                     </span><br/>
-                <strong>-----LOCALIZAÇÃO-----</strong><br/>
-                <span>CEP: <input type="text" name="postcode" value="{{ property.postcode }}"/></span><br/>
-                <span>Rua: <input type="text" name="street" value="{{ property.street }}"/></span><br/>
-                <span>Cidade: <input type="text" name="city" value="{{ property.city }}"/></span><br/>
-                <span>Estado: <input type="text" name="state" value="{{ property.state }}"/></span><br/>
-                <strong>-----GERAL-----</strong><br/>
-                <span>N° quartos: <input type="text" name="bedrooms" value="{{ property.bedrooms }}"/></span><br/>
-                <span>N° banheiros: <input type="text" name="bathrooms" value="{{ property.bathrooms }}"/></span><br/>
-                <span>N° vagas garagem: <input type="text" name="parking_spaces" value="{{ property.parking_spaces }}"/></span><br/>
-                <span>Metros quadrados: <input type="text" name="square_meters" value="{{ property.square_meters }}"/></span><br/>
-                <span>Descrição:<input type="text" name="description" value="{{ property.description }}"/></span><br/>
-                <strong>Forma de contato</strong>
-                <span>Tel:  <input type="text" name="tel" value="{{ property.tel }}"/></span><br/>
+                <strong>------------LOCALIZAÇÃO------------</strong><br/>
+                <span><strong>CEP: </strong><input type="text" name="postcode" value="{{ property.postcode }}"/></span><br/>
+                <span><strong>Rua: </strong><input type="text" name="street" value="{{ property.street }}"/></span><br/>
+                <span><strong>Cidade: </strong><input type="text" name="city" value="{{ property.city }}"/></span><br/>
+                <span><strong>Estado: </strong><input type="text" name="state" value="{{ property.state }}"/></span><br/>
+                <strong>-----------------GERAL------------------</strong><br/>
+                <span><strong>N° quartos: </strong><input type="text" name="bedrooms" value="{{ property.bedrooms }}"/></span><br/>
+                <span><strong>N° banheiros: </strong><input type="text" name="bathrooms" value="{{ property.bathrooms }}"/></span><br/>
+                <span><strong>N° vagas garagem: </strong><input type="text" name="parking_spaces" value="{{ property.parking_spaces }}"/></span><br/>
+                <span><strong>Metros quadrados: </strong><input type="text" name="square_meters" value="{{ property.square_meters }}"/></span><br/>
+                <span><strong>Descrição: </strong><input type="text" name="description" value="{{ property.description }}"/></span><br/>
+                <strong>Forma de contato</strong><br/>
+                <span><strong>Tel: </strong><input type="text" name="tel" value="{{ property.tel }}"/></span><br/>
 
                 <button type="submit">
                     Enviar
                 </button>
             </form>
+            </div>
     </section>
