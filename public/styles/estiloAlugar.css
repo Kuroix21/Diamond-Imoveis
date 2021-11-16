@@ -77,8 +77,14 @@ a{
     cursor: pointer;
 }
 
+.stand1 img {
+    width: auto;
+    max-width: 260px;
+}
+
 .stand1{
     border-left: 6px solid #f87a04;
+    display: flex;
     
 }
 .stand1:hover{

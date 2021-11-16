@@ -52,6 +52,26 @@ const Property = db.sequelize.define('property_entities', {
     description: {
         type: db.Sequelize.TEXT   
     },
+    
+    files_one: {
+        type: db.Sequelize.TEXT   
+    },
+    
+    files_two: {
+        type: db.Sequelize.TEXT   
+    },
+    
+    files_three: {
+        type: db.Sequelize.TEXT   
+    },
+    
+    files_four: {
+        type: db.Sequelize.TEXT   
+    },
+    
+    files_five: {
+        type: db.Sequelize.TEXT   
+    },
 })
 
 //Property.sync({force: true})

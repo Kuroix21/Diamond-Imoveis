@@ -1,6 +1,16 @@
-
+{{#if erros}}
+    <div class="message-erro">
+    {{#each erros}}
+    <span class="">
+        {{message}}
+    </span>
+    <br/>
+    {{else}}
+    {{/each}}
+    </div>
+{{/if}}
     <section>
-      <form id="formulario" name="form validate" method="POST" action="property/add">
+      <form id="form" name="form validate" action="/property/add" method="POST" enctype="multipart/form-data">
         <div class="cadPropri">
             <h2 class="titulos"><strong>Cadastre sua propriedade</strong></h2>
             <p>Insira as informações do imovel:</p>
@@ -54,17 +64,13 @@
 
             <p class="titulos">Insira abaixo uma forma de contato:</p>
               <p><strong>Telefone:</strong></p>
-              <p><input class="txtbox" name="tel" type="tel" pattern="^\d{2} \d{5}-\d{4}$" required placeholder="ex: dd xxxxx-xxxx"></p>
+              <p><input class="txtbox" name="tel" type="tel" placeholder="ex: dd xxxxx-xxxx"></p>
 
             <h5 class="titulos">Insira abaixo 3 imagens do seu imovel:</h5>
-            <form class="upload-imagem">
-                <input type="file" class="upload" required>
-                <input type="file" class="upload" required>
-                <input type="file" class="upload" required>
+                <input type="file" name="photos" class="upload" multiple>
                 
-              </form>
                 <img class="imagem" src="http://via.placeholder.com/750x420" alt="Sua imagem" width="350" height="150">
-                <input name="cadastrarP" type="submit" value="Finalizar Cadastro" class="CadastroP" onclick="cadastroConcluido()"/>
+                <button type="submit" value="Finalizar Cadastro" class="CadastroP">
 
           </div>
         </form>

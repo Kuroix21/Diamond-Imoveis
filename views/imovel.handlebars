@@ -1,6 +1,20 @@
-<section>
+<section class="product-view">
         <a >
+            
             <div class="img">
+                {{#if property.files_one}}
+                <img src="/public/uploads/{{property.files_one}}"/>
+                {{/if}}
+                {{#if property.files_two}}
+                <img src="/public/uploads/{{property.files_two}}"/>
+                {{/if}}
+                {{#if property.files_three}}
+                <img src="/public/uploads/{{property.files_three}}"/>
+                {{/if}}
+                {{#if property.files_four}}
+                <img src="/public/uploads/{{property.files_four}}"/>
+                {{/if}}
+                
             </div>
             <div class="infos">
                 <p><strong>{{property.name}}</strong></p>
@@ -24,4 +38,17 @@
                 <p><strong>Tel: </strong> {{ property.tel }}</p>
             </div>
         </a>
+
+
     </section>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.img').slick({
+ dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+      });
+    });
+  </script>
