@@ -77,6 +77,11 @@ a{
     cursor: pointer;
 }
 
+.information{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
 .stand1 img {
     width: auto;
     max-width: 260px;
